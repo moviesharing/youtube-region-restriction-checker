@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Region Restriction Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>YouTube Region Restriction Checker</h1>
+    <p class="about">Check where your YouTube videos are restricted and get detailed information.</p>
+    
+    <!-- Input Field and Check Button -->
+    <div class="input-container">
+      <label for="video-url">Enter YouTube Video URL:</label>
+      <input type="text" id="video-url" placeholder="Paste YouTube Video URL">
+      <button onclick="checkRegion()">Check</button>
+    </div>
+
+    <!-- Map and Country List -->
+    <div class="result-container">
+      <div id="map"></div>
+      <div id="country-list"></div>
+    </div>
+
+    <!-- Video Details -->
+    <div id="video-details" class="result-container"></div>
+  </div>
+  
+  <!-- Footer -->
+    <footer>
+      <p>&copy; <span id="current-year"></span> YouTube Region Restriction Checker | Author: Jphabs Khalifa</p>
+    </footer>
+  </div>
+
+  <!-- Include the YouTube API script -->
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+  
+  <script>
+    // Update the current year in the footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+  
+</body>
+</html>

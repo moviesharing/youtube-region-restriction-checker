@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+  color: #666; /* Slightly darker text color */
+  margin: 10px;
+}
+
+.input-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 10px;
+  background-color: f1f1f1;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.result-container {
+  margin-top: 20px;
+}
+
+#map,
+#country-list,
+#video-details {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* ... (previous styles) */
+
+#video-details {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#video-details h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#video-details p {
+  margin-bottom: 10px;
+}
+
+#video-details img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+#video-details .description {
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f4f4f4; /* Light background color */
+}
+
+footer p {
+  margin: 0;
+}
+
+#current-year {
+  font-weight: bold;
+}
