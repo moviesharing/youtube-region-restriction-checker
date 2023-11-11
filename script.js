@@ -90,13 +90,19 @@ function updateCountryList(videoInfo) {
 
 function updateVideoDetails(videoInfo) {
   const videoDetailsContainer = document.getElementById('video-details');
+  
+  // Choose the highest resolution thumbnail available
+  const thumbnailUrl = videoInfo.snippet.thumbnails.maxres
+    ? videoInfo.snippet.thumbnails.maxres.url
+    : videoInfo.snippet.thumbnails.high.url;
+
   videoDetailsContainer.innerHTML = `
     <h2>Video Details</h2>
-    <p class="title">Title: ${videoInfo.snippet.title}</p>
-    <p class="uploader">Uploader: ${videoInfo.snippet.channelTitle}</p>
-    <p class="views">Views: ${videoInfo.statistics.viewCount}</p>
-    <p class="upload-date">Upload Date: ${videoInfo.snippet.publishedAt}</p>
-    <img src="${videoInfo.snippet.thumbnails.default.url}" alt="Video Thumbnail">
-    <p class="description">Description: ${videoInfo.snippet.description}</p>
+    <p>Title: ${videoInfo.snippet.title}</p>
+    <p>Uploader: ${videoInfo.snippet.channelTitle}</p>
+    <p>Views: ${videoInfo.statistics.viewCount}</p>
+    <p>Upload Date: ${videoInfo.snippet.publishedAt}</p>
+    <img src="${thumbnailUrl}" alt="Video Thumbnail">
+    <p>Description: ${videoInfo.snippet.description}</p>
   `;
 }
